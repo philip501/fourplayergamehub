@@ -1,8 +1,12 @@
 ---
-layout: page
+layout: default
 title: Contact Us!
 permalink: /contact/
 ---
+
+{%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
 
 Feel free to contact us!
 
@@ -22,8 +26,6 @@ If you want to report a bug, please make sure to include the traceback in your m
   </label>
 </form>
 
-<!--
 {:refdef: style="text-align: center;"}
 ![](/assets/img/contact_pic.jpg)
 {: refdef}
--->
