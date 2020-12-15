@@ -20,7 +20,7 @@ This is the path where all the files are stored on your android phone. Your curr
 <table style="border: none; background-color: white">
   <tr style="border: none; background-color: white; list-style: none">
     <td style="border: none; background-color: white; list-style: none; width: 20%">
-      <img src="/assets/img/icons/home.png" alt="" style="text-align: center">
+      <img src="{{ site.baseurl | append: '/assets/img/icons/home.png' }}" alt="" style="text-align: center">
     </td>
     <td style="border: none; background-color: white; list-style: none">
       The home button will always redirect you back to the entrypoint-path from above.
@@ -28,7 +28,7 @@ This is the path where all the files are stored on your android phone. Your curr
   </tr>
   <tr style="border: none; background-color: white; list-style: none">
     <td style="border: none; background-color: white; list-style: none; width: 20%">
-      <img src="/assets/img/icons/sdcard.png" alt="" style="text-align: center">
+      <img src="{{ site.baseurl | append: '/assets/img/icons/sdcard.png' }}" alt="" style="text-align: center">
     </td>
     <td style="border: none; background-color: white; list-style: none">
       Pressing this button will direct you to the path of your SD card. The permission to access your SD card has to be granted first. You can manage your permissions in your phone's Settings > Apps > 4 Player Game Hub > Permissions. Otherwise you will be directed to an (intended) error screen. In this case tapping the screen will get you back to the explorer.
@@ -36,7 +36,7 @@ This is the path where all the files are stored on your android phone. Your curr
   </tr>
   <tr style="border: none; background-color: white; list-style: none">
     <td style="border: none; background-color: white; list-style: none; width: 20%">
-      <img src="/assets/img/icons/search.png" alt="" style="text-align: center">
+      <img src="{{ site.baseurl | append: '/assets/img/icons/search.png' }}" alt="" style="text-align: center">
     </td>
     <td style="border: none; background-color: white; list-style: none">
       Pressing the search button will enable you to type in a custom path in place of the current directory. Pressing this button again will direct you to the path of your choice. If the path is invalid you will be directed to an (intended) error screen. In this case tapping the screen will get you back to the explorer.
@@ -44,7 +44,7 @@ This is the path where all the files are stored on your android phone. Your curr
   </tr>
   <tr style="border: none; background-color: white; list-style: none">
     <td style="border: none; background-color: white; list-style: none; width: 20%">
-      <img src="/assets/img/icons/logo.png" alt="" style="text-align: center">
+      <img src="{{ site.baseurl | append: '/assets/img/icons/logo.png' }}" alt="" style="text-align: center">
     </td>
     <td style="border: none; background-color: white; list-style: none">
       This button will redirect you back to the game.
@@ -61,7 +61,7 @@ You can copy multiple files at the same time. When doing so the 'SD card' button
 <table style="border: none; background-color: white">
   <tr style="border: none; background-color: white; list-style: none">
     <td style="border: none; background-color: white; list-style: none; width: 20%">
-      <img src="/assets/img/icons/copy.png" alt="" style="text-align: center">
+      <img src="{{ site.baseurl | append: '/assets/img/icons/copy.png' }}" alt="" style="text-align: center">
     </td>
     <td style="border: none; background-color: white; list-style: none">
       When this button is pressed your currently stored files you intend to copy are displayed on your screen. In order to visualize that you are viewing these files the colours of this button get inversed (see next).
@@ -69,7 +69,7 @@ You can copy multiple files at the same time. When doing so the 'SD card' button
   </tr>
   <tr style="border: none; background-color: white; list-style: none">
     <td style="border: none; background-color: white; list-style: none; width: 20%">
-      <img src="/assets/img/icons/copy_inv.png" alt="" style="text-align: center">
+      <img src="{{ site.baseurl | append: '/assets/img/icons/copy_inv.png' }}" alt="" style="text-align: center">
     </td>
     <td style="border: none; background-color: white; list-style: none">
       This button indicates that you are viewing your currently stored files you intend to copy. Pressing it results in getting back to the explorer at your current path and in inverting its colour to the original one.
