@@ -3,27 +3,25 @@ layout: default
 ---
 
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+{%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
 
-  {% assign contents = content | split: "SPLIT" %}
+{% assign contents = content | split: "SPLIT" %}
 
-  {{ contents[0] }}
+{{ contents[0] }}
 
-  {% for file in site.categories.explorer reversed %}
-    <ul style="list-style: none">
-      <li>
-        <h3>
-          <a href="{{ file.url | relative_url }}">
-            {{ file.title | escape }}
-          </a>
-        </h3>
-      </li>
-    </ul>
-  {% endfor %}
+{% for file in site.categories.explorer reversed %}
+  <ul style="list-style: none">
+    <li>
+      <h3>
+        <a href="{{ file.url | relative_url }}">
+          {{ file.title | escape }}
+        </a>
+      </h3>
+    </li>
+  </ul>
+{% endfor %}
 
-  {{ contents[1] }}
+{{ contents[1] }}
 
-</div>
