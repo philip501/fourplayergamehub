@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+{% assign contents = content | split: "SPLIT" %}
+
+{{ contents[0] }}
+
+<table style="border: none; background-color: white">
+  {% for param in site.categories.parameters reversed %}
+    {% assign c = param.content | split: "SPLIT" %}
+    <tr style="border: none; background-color: white; list-style: none">
+      <td style="border: none; background-color: white; list-style: none; vertical-align: text-top">
+        {{ c[0] }}
+      </td>
+      <td style="border: none; background-color: white; list-style: none">
+        {{ c[1] }}
+      </td>
+    </tr>
+  {% endfor %}
+</table>

@@ -1,0 +1,21 @@
+---
+layout: games
+title: "Pong"
+category: games
+permalink: /docs/games/pong/
+---
+
+|![](/assets/img/g_pong.jpg){:style="text-align: center; border-radius: 8px"}
+
+The goal of the game is to avoid the ball to touch the line behind your paddle. This can be done by moving your paddle left and right by holding your left or right button respectively. When the ball touches your line your paddle will be removed. The last player 'alive' will be awarded a point. The speed of the ball is increased every time it bounces off a paddle.
+
+Prior to the game the description visible on the screen is the following.
+![](/assets/img/d_pong.jpg){:style="text-align: center; border-radius: 8px"}
+<br>
+<br>
+list of customisable parameters:
+- number_of_rounds
+- speed_up_max
+- speed_up_start
+- speed_up_factor
+- hold_moving_speed

@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    {% if page.title == "Logs"%}
+      <p class="post-meta">Fantastic logs and where to find them.</p>
+    {% endif %}
+  </header>
+
+  {% for page in site.pages %}
+    {% if page.title == "Docs" %}
+      {% assign docs_file = page %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% for file in site.categories.explorer %}
+    {% if file.title == page.title %}
+      {% assign index_next = forloop.index0 | minus: 1 %}
+      {% assign index_prev = forloop.index %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  <table style="border: none">
+    {% if index_prev < site.categories.explorer.size %}
+      {% assign prev_file = site.categories.explorer[index_prev] %}
+      <td style="width: 33%; text-align: left; list-style: none; border: none">
+        <li>
+          <a href="{{ prev_file.url | relative_url }}">
+            {{ prev_file.title | escape | prepend: "<< "}}
+          </a>
+        </li>
+      </td>
+    {% else %}
+      <td style="width: 33%; border: none"></td>
+    {% endif %}
+    <td style="width: 33%; text-align: center; list-style: none; border: none">
+      <li>
+        <a href="{{ docs_file.url | relative_url | append: '#3-explorer' }}">
+          {{ docs_file.title | escape }}
+        </a>
+      </li>
+    </td>
+    {% if index_next >= 0 %}
+      {% assign next_file = site.categories.explorer[index_next] %}
+      <td style="width: 33%; text-align: right; list-style: none; border: none">
+        <li>
+          <a href="{{ next_file.url | relative_url }}">
+            {{ next_file.title | escape | append: " >>" }}
+          </a>
+        </li>
+      </td>
+    {% else %}
+      <td style="width: 33%; border: none"></td>
+    {% endif %}
+  </table>
+
+</article>

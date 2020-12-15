@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {% assign contents = content | split: "SPLIT" %}
+
+  {{ contents[0] }}
+
+  {% for page in site.pages %}
+    {% if page.category == "quickies" %}
+      <ul style="list-style: none">
+        <li>
+          <h4>
+            <a href="{{ page.url | relative_url }}">
+              {{ page.title | escape }}
+            </a>
+          </h4>
+        </li>
+      </ul>
+    {% endif %}
+  {% endfor %}
+
+  {{ contents[1] }}
+
+  <ul style="list-style: none">
+    <li>
+      <h4>
+        <a href="/docs/#1-how-to-play">
+          {{ "1. How To Play" }}
+        </a>
+      </h4>
+    </li>
+  </ul>
+
+  <ul style="list-style: none">
+    <li>
+      <h4>
+        <a href="/docs/#2-customisation">
+          {{ "2. Customisation" }}
+        </a>
+      </h4>
+    </li>
+  </ul>
+
+  <ul style="list-style: none">
+    <li>
+      <h4>
+        <a href="/docs/#3-explorer">
+          {{ "3. Explorer" }}
+        </a>
+      </h4>
+    </li>
+  </ul>
+
+  {{ contents[2] }}
+
+  <ul style="list-style: none">
+    <li>
+      <h4>
+        <a href="/docs/explorer/basic_navigation">
+          {{ "Basic Navigation" }}
+        </a>
+      </h4>
+    </li>
+  </ul>
+
+  <ul style="list-style: none">
+    <li>
+      <h4>
+        <a href="/docs/explorer/local_files">
+          {{ "Local Files" }}
+        </a>
+      </h4>
+    </li>
+  </ul>
+
+  <ul style="list-style: none">
+    <li>
+      <h4>
+        <a href="/docs/explorer/logs">
+          {{ "Logs" }}
+        </a>
+      </h4>
+    </li>
+  </ul>
+
+
+
+</div>

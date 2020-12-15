@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+{% assign contents = content | split: "SPLIT" %}
+
+{{ contents[0] }}
+
+{% for file in site.categories.games reversed %}
+  <ul style="list-style: none">
+    <li>
+      <h4>
+        <a href="{{ file.url | relative_url }}">
+          {{ file.title | escape }}
+        </a>
+      </h4>
+    </li>
+  </ul>
+{% endfor %}
+
+{% for page in site.pages %}
+  {% if page.title == "Docs" %}
+    {% assign docs_file = page %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<li style="list-style: none">
+  <a href="{{ docs_file.url | append: '#games_link' | relative_url }}">
+    {{ docs_file.title | escape | prepend: "<< "}}
+  </a>
+</li>

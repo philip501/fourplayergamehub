@@ -1,0 +1,11 @@
+---
+layout: games
+title: "speed_up"
+category: parameters
+---
+
+speed_up SPLIT This parameter describes the amount update cycles after which the update speed increases.
+
+TYPE: 1
+<br>
+RANGE: [1,100]
