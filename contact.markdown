@@ -6,7 +6,8 @@ permalink: /contact/
 
 Feel free to contact us!
 
-If you want to report a bug, please make sure to include the traceback in your message! For a detailed instruction how to properly report a bug, please read the [docs](/docs/explorer/logs/#how-to-report-a-bug).
+If you want to report a bug, please make sure to include the traceback in your message! For a detailed instruction how to properly report a bug, please read the [docs]({{site.baseurl|append:"/docs/explorer/logs/#how-to-report-a-bug"}}).
+
 
 <form action="https://formspree.io/f/mknpqqvy" method="POST" style="margin-left: 5%; margin-right: 15%; margin-top: 25px; margin-bottom: 25px">
   <label>

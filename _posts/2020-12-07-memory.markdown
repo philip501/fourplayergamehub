@@ -5,16 +5,16 @@ category: games
 permalink: /docs/games/memory/
 ---
 
-|![](/assets/img/g_memory0.jpg){:style="text-align: center; border-radius: 8px; margin-bottom: 10px"}![](/assets/img/g_memory1.jpg){:style="text-align: center; border-radius: 8px"}
+|![]({{site.baseurl|append:"/assets/img/g_memory0.jpg"}}){:style="text-align: center; border-radius: 8px; margin-bottom: 10px"}![]({{site.baseurl|append:"/assets/img/g_memory1.jpg"}}){:style="text-align: center; border-radius: 8px"}
 
 The goal of this game is to recognise as many pairs of cards as possible. The button of the player whose turn it is will be highlighted in yellow (badly visible in the lower picture above; the edges of the button are coloured in yellow). This player then selects two cards by pressing on them. The selected cards will then be highlighted in yellow (as can be seen in the upper picture above). You can unselect a card by pressing on it again. Once you have selected the two cards press your button and the cards of your choice will be revealed (as can be seen in the lower picture above). If they match the two cards will disappear, you will be awarded a point and its your turn again. Otherwise the cards will be turned back down and it will be the next players turn.
 
-By default there is one set of memory cards available from which the game pics its cards. You can create a custom one in your local files (see [local files](/docs/explorer/local_files/#2-memory) for further explaination).
+By default there is one set of memory cards available from which the game pics its cards. You can create a custom one in your local files (see [local files]({{site.baseurl|append:"/docs/explorer/local_files/#2-memory"}}) for further explaination).
 
 By default you have four seconds to memorise the cards revealed. This and other parameters (see list of customisable parameters below) can be customised.
 
 Prior to the game the description visible on the screen is the following.
-![](/assets/img/d_memory.jpg){:style="text-align: center; border-radius: 8px"}
+![]({{site.baseurl|append:"/assets/img/d_memory.jpg"}}){:style="text-align: center; border-radius: 8px"}
 <br>
 <br>
 list of customisable parameters:

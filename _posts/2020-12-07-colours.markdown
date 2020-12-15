@@ -5,7 +5,7 @@ category: games
 permalink: /docs/games/colours/
 ---
 
-|![](/assets/img/g_colours0.jpg){:style="text-align: center; border-radius: 8px; margin-bottom: 10px"}![](/assets/img/g_colours1.jpg){:style="text-align: center; border-radius: 8px"}
+|![]({{site.baseurl|append:"/assets/img/g_colours0.jpg"}}){:style="text-align: center; border-radius: 8px; margin-bottom: 10px"}![]({{site.baseurl|append:"/assets/img/g_colours1.jpg"}}){:style="text-align: center; border-radius: 8px"}
 
 The goal of this game is to press the button whenever the the name of the colour matches either the background colour or the colour of the text itself. Which one to look out for will be specified before the game and visible in the description prior to the game. The fastest one to do so will be awarded a point and your button will be highlighted in green (as can be seen in the picture above). In case a button is pressed and text and colour do not match you will lose a point and your button will be highlighted in red.
 
@@ -14,7 +14,7 @@ In the example above the task was to press your button when the text matches the
 By default you have three seconds to recognise whether the text and colour matches. This and other parameters (see list of customisable parameters below) can be customised.
 
 Prior to the game the description visible on the screen is the following. Pay attention as to whether it says 'background colour' or 'text colour'!
-![](/assets/img/d_colours0.jpg){:style="text-align: center; border-radius: 8px"}
+![]({{site.baseurl|append:"/assets/img/d_colours0.jpg"}}){:style="text-align: center; border-radius: 8px"}
 <br>
 <br>
 list of customisable parameters:
