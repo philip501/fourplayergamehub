@@ -19,6 +19,8 @@ layout: firstlayout
 
 ---
 <br>
+<span style="font-weight: bold">4 PLAYER GAME HUB</span> is a fun and interactive game. You can play it with up to four players. It is fully customisable. You can find all the options in the docs!
+
 some quick links:
 
 SPLIT
