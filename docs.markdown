@@ -82,16 +82,4 @@ Some games are even further customisable. When pressing on "browse files" in the
 
 SPLIT
 
-Make the following points Posts-like too:
-<br>
-Basic Navigation (done)
-<br>
-local_files (done)
-<br>
-logs (done)
-<br>
-SD card - enable in phone settings (done)
-<br>
-file viewer - copy & paste
-
 still missing: what to do when redirected to error page.
