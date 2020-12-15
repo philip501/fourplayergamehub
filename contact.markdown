@@ -22,6 +22,8 @@ If you want to report a bug, please make sure to include the traceback in your m
   </label>
 </form>
 
+<!--
 {:refdef: style="text-align: center;"}
 ![](/assets/img/contact_pic.jpg)
 {: refdef}
+-->
