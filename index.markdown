@@ -22,6 +22,9 @@ layout: firstlayout
 <span style="font-weight: bold">4 PLAYER GAME HUB</span> is a fun and interactive game. You can play it with up to four players. It is fully customisable. You can find all the options in the docs!
 <br>
 <br>
+The game is ONLY available on android in the [Google Play Store](https://play.google.com/store/apps/details?id=org.muenz.fourplayer)!
+<br>
+<br>
 some quick links:
 
 SPLIT
