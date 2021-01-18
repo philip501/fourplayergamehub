@@ -84,9 +84,6 @@ Some games are even further customisable. When pressing on "browse files" in the
 
 SPLIT
 
-still missing: what to do when redirected to error page.
-<br>
-<br>
 ## 4. Error
 When an error occurs you will be redirected to the error screen where the corresponding traceback will be displayed (see picture below). There are two types of (handled) error. If the error is an expected one you can get back to the app by tapping on the screen. If the error is fatal you will have to restart the app. In any case the traceback will be stored in your local [logs]({{site.baseurl|append:"/docs/explorer/logs"}}). If the app crashes by itself you will find the error message in your kivy [logs]({{site.baseurl|append:"/docs/explorer/logs"}}).
 
